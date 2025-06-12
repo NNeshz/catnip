@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import backgroundImage from "../assets/pixel2.jpeg";
+import letterImage from "../assets/catnip.png";
+---
+
+<div class="h-screen w-full relative overflow-hidden">
+  <div class="absolute w-full h-full">
+    <Image
+      src={backgroundImage}
+      alt="Sculpture"
+      class="object-contain h-full w-full opacity-50"
+    />
+    <div
+      class="bg-gradient-to-b from-background via-transparent to-background absolute inset-0"
+    >
+    </div>
+  </div>
+
+  <div
+    class="absolute inset-0 flex items-center justify-center z-10 max-w-7xl mx-auto p-8"
+  >
+    <div class="flex flex-col justify-start items-center">
+      <Image src={letterImage} alt="Catnip" class="w-full h-auto" />
+    </div>
+  </div>
+</div>

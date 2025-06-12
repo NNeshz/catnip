@@ -1,0 +1,431 @@
+---
+const images = [
+    {
+        src: "../../src/assets/tattoos/tattoo_1.jpeg",
+        alt: "Alas de Duki",
+        title: "Alas de Duki",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_2.jpeg",
+        alt: "Inicial A",
+        title: "Inicial A",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_3.jpeg",
+        alt: "Ohana",
+        title: "Ohana",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_4.jpeg",
+        alt: "Batman x Guason",
+        title: "Batman x Guason",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_5.jpeg",
+        alt: "Serpiente en la espalda",
+        title: "Serpiente en la espalda",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_6.jpeg",
+        alt: "Self Care Tattoo",
+        title: "Self Care Tattoo",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_8.jpeg",
+        alt: "Ramos",
+        title: "Ramos",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_9.jpeg",
+        alt: "Corazónes en fila",
+        title: "Corazónes en fila",
+    },
+    {
+        src: "../../src/assets/tattoos/tattoo_10.jpeg",
+        alt: "L en el pecho",
+        title: "L en el pecho",
+    },
+]
+---
+
+<section class="portfolio-section">
+    <h2 class="portfolio-title">Portafolio</h2>
+    
+    <div class="bento-grid">
+        <!-- Elemento grande destacado -->
+        <div class="bento-item large">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_1.jpeg" alt="Alas de Duki" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Alas de Duki</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento pequeño -->
+        <div class="bento-item small">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_2.jpeg" alt="Inicial A" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Inicial A</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento mediano -->
+        <div class="bento-item medium">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_3.jpeg" alt="Ohana" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Ohana</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento mediano -->
+        <div class="bento-item medium">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_4.jpeg" alt="Batman x Guason" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Batman x Guason</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento grande -->
+        <div class="bento-item large">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_5.jpeg" alt="Serpiente en la espalda" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Serpiente en la espalda</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento pequeño -->
+        <div class="bento-item small">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_6.jpeg" alt="Self Care Tattoo" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Self Care Tattoo</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento mediano -->
+        <div class="bento-item medium">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_8.jpeg" alt="Ramos" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Ramos</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento pequeño -->
+        <div class="bento-item small">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_9.jpeg" alt="Corazónes en fila" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">Corazónes en fila</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elemento mediano -->
+        <div class="bento-item medium">
+            <div class="image-container">
+                <img src="../../src/assets/tattoos/tattoo_10.jpeg" alt="L en el pecho" class="tattoo-image">
+                <div class="overlay">
+                    <div class="title-container">
+                        <h3 class="tattoo-title">L en el pecho</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .portfolio-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  opacity: 0;
+  animation: fadeIn 0.7s ease-in-out 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Elementos del bento grid */
+.bento-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bento-item:hover {
+  transform: scale(1.02);
+}
+
+/* Tamaños de elementos */
+.bento-item.small {
+  grid-column: span 1;
+  grid-row: span 1;
+  aspect-ratio: 1;
+}
+
+.bento-item.medium {
+  grid-column: span 2;
+  grid-row: span 1;
+  aspect-ratio: 2 / 1;
+}
+
+.bento-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+  aspect-ratio: 1;
+}
+
+/* Contenedor de imagen */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tattoo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+.bento-item:hover .tattoo-image {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+/* Overlay con título */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: flex-end;
+  z-index: 10;
+}
+
+.bento-item:hover .overlay {
+  opacity: 1;
+}
+
+.title-container {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.tattoo-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .portfolio-section {
+    padding: 4rem 1.5rem;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .bento-item.medium {
+    grid-column: span 1;
+    aspect-ratio: 1;
+  }
+
+  .portfolio-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .bento-item.medium,
+  .bento-item.large {
+    grid-column: span 1;
+    aspect-ratio: 1;
+  }
+
+  .portfolio-title {
+    font-size: 2rem;
+  }
+
+  .tattoo-title {
+    font-size: 0.875rem;
+  }
+
+  .title-container {
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-section {
+    padding: 2rem 0.75rem;
+  }
+
+  .bento-grid {
+    gap: 0.5rem;
+  }
+
+  .portfolio-title {
+    font-size: 1.75rem;
+  }
+
+  .bento-item {
+    border-radius: 0.5rem;
+  }
+}
+
+/* Mejoras adicionales para la experiencia visual */
+.bento-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.bento-item:hover::before {
+  opacity: 1;
+  animation: shimmer 0.6s ease-in-out;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Efecto de carga suave para las imágenes */
+.tattoo-image {
+  opacity: 0;
+  animation: imageLoad 0.5s ease-in-out 0.1s forwards;
+}
+
+@keyframes imageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Añadir delay escalonado para cada elemento */
+.bento-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.bento-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.bento-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.bento-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.bento-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.bento-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.bento-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.bento-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.bento-item:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+</style>
