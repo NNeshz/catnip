@@ -4,12 +4,12 @@ import backgroundImage from "../assets/pixel2.jpeg";
 import letterImage from "../assets/catnip.png";
 ---
 
-<div class="h-screen w-full relative overflow-hidden">
+<section id="hero" class="h-[100dvh] w-full relative overflow-hidden">
   <div class="absolute w-full h-full">
     <Image
       src={backgroundImage}
       alt="Sculpture"
-      class="object-contain h-full w-full opacity-50"
+      class="object-cover h-full w-auto opacity-20"
     />
     <div
       class="bg-gradient-to-b from-background via-transparent to-background absolute inset-0"
@@ -24,4 +24,4 @@ import letterImage from "../assets/catnip.png";
       <Image src={letterImage} alt="Catnip" class="w-full h-auto" />
     </div>
   </div>
-</div>
+</section>

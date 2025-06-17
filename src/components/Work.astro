@@ -6,6 +6,7 @@ type Image = {
 }
 
 import dukiAlas from "../assets/tattoos/tattoo_1.jpeg"
+import dukiDiablo from "../assets/tattoos/tattoo_7.jpeg"
 import inicialA from "../assets/tattoos/tattoo_2.jpeg"
 import ohana from "../assets/tattoos/tattoo_3.jpeg"
 import batmanGuason from "../assets/tattoos/tattoo_4.jpeg"
@@ -15,6 +16,7 @@ import ramos from "../assets/tattoos/tattoo_8.jpeg"
 import corazones from "../assets/tattoos/tattoo_9.jpeg"
 import lPecho from "../assets/tattoos/tattoo_10.jpeg"
 import luna from "../assets/tattoos/tattoo_11.jpeg"
+import eyes from "../assets/tattoos/tattoo_12.jpeg"
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 
@@ -25,19 +27,24 @@ const images: Image[] = [
     title: "Alas de Duki",
   },
   {
+    src: batmanGuason,
+    alt: "Batman x Guason",
+    title: "Batman x Guason",
+  },
+  {
     src: inicialA,
     alt: "Inicial A",
     title: "Inicial A",
   },
   {
+    src: dukiDiablo,
+    alt: "Duki Diablo",
+    title: "Duki Diablo",
+  },
+  {
     src: ohana,
     alt: "Ohana",
     title: "Ohana",
-  },
-  {
-    src: batmanGuason,
-    alt: "Batman x Guason",
-    title: "Batman x Guason",
   },
   {
     src: serpiente,
