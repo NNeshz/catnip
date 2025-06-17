@@ -1,60 +1,73 @@
 ---
 type Image = {
-  src: string;
+  src: ImageMetadata;
   alt: string;
   title: string;
 }
 
+import dukiAlas from "../assets/tattoos/tattoo_1.jpeg"
+import inicialA from "../assets/tattoos/tattoo_2.jpeg"
+import ohana from "../assets/tattoos/tattoo_3.jpeg"
+import batmanGuason from "../assets/tattoos/tattoo_4.jpeg"
+import serpiente from "../assets/tattoos/tattoo_5.jpeg"
+import selfCare from "../assets/tattoos/tattoo_6.jpeg"
+import ramos from "../assets/tattoos/tattoo_8.jpeg"
+import corazones from "../assets/tattoos/tattoo_9.jpeg"
+import lPecho from "../assets/tattoos/tattoo_10.jpeg"
+import luna from "../assets/tattoos/tattoo_11.jpeg"
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
 const images: Image[] = [
   {
-    src: "../../src/assets/tattoos/tattoo_1.jpeg",
+    src: dukiAlas,
     alt: "Alas de Duki",
     title: "Alas de Duki",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_2.jpeg",
+    src: inicialA,
     alt: "Inicial A",
     title: "Inicial A",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_3.jpeg",
+    src: ohana,
     alt: "Ohana",
     title: "Ohana",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_4.jpeg",
+    src: batmanGuason,
     alt: "Batman x Guason",
     title: "Batman x Guason",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_5.jpeg",
+    src: serpiente,
     alt: "Serpiente en la espalda",
     title: "Serpiente en la espalda",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_6.jpeg",
+    src: selfCare,
     alt: "Self Care Tattoo",
     title: "Self Care Tattoo",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_8.jpeg",
+    src: ramos,
     alt: "Ramos",
     title: "Ramos",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_9.jpeg",
+    src: corazones,
     alt: "Corazónes en fila",
     title: "Corazónes en fila",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_10.jpeg",
+    src: lPecho,
     alt: "L en el pecho",
     title: "L en el pecho",
   },
   {
-    src: "../../src/assets/tattoos/tattoo_11.jpeg",
-    alt: "",
-    title: "",
+    src: luna,
+    alt: "Luna",
+    title: "Luna",
   }
 ];
 
@@ -86,8 +99,8 @@ const desktopColumns = divideIntoColumns(images, 3);
       <div class="pinterest-column">
         {column.map((image: Image) => (
           <div class="pinterest-item grayscale hover:grayscale-0 transition duration-300 hover:scale-101" >
-            <img
-              src={image.src || "/placeholder.svg"}
+            <Image
+              src={image.src}
               alt={image.alt}
               title={image.title}
               class="pinterest-image"
@@ -108,8 +121,8 @@ const desktopColumns = divideIntoColumns(images, 3);
       <div class="pinterest-column">
         {column.map((image: Image) => (
           <div class="pinterest-item grayscale hover:grayscale-0 transition duration-300 hover:scale-101" >
-            <img
-              src={image.src || "/placeholder.svg"}
+            <Image
+              src={image.src}
               alt={image.alt}
               title={image.title}
               class="pinterest-image"
@@ -130,8 +143,8 @@ const desktopColumns = divideIntoColumns(images, 3);
       <div class="pinterest-column">
         {column.map((image: Image) => (
           <div class="pinterest-item grayscale hover:grayscale-0 transition duration-300 hover:scale-101" >
-            <img
-              src={image.src || "/placeholder.svg"}
+            <Image
+              src={image.src}
               alt={image.alt}
               title={image.title}
               class="pinterest-image"
